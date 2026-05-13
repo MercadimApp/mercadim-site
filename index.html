@@ -11,9 +11,7 @@
 <meta name="robots" content="index, follow">
 <meta name="author" content="Mercadim">
 <meta name="theme-color" content="#1B6B3A">
-  <meta name="google-site-verification" content="y5Zy6pZHLAccxKP9cTVnVrBqEQo1YajEDdPrFdOxdBc" />
-
-  
+<meta name="google-site-verification" content="y5Zy6pZHLAccxKP9cTVnVrBqEQo1YajEDdPrFdOxdBc" />
 
 <!-- ══ OPEN GRAPH (WhatsApp, Facebook, LinkedIn) ══ -->
 <meta property="og:type" content="website">
@@ -133,6 +131,54 @@
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "Basta fotografar qualquer produto na prateleira. A inteligência artificial do Mercadim reconhece o produto e compara o preço automaticamente com outros estabelecimentos da sua região."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "O Mercadim funciona em feiras livres?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Sim! O Mercadim foi feito pensando na realidade brasileira. Você pode comparar preços tanto em supermercados quanto em feiras livres e mercadinhos do bairro."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Preciso de internet para usar o Mercadim?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Sim, o Mercadim precisa de internet para buscar os preços mais recentes da comunidade. Recomendamos usar com Wi-Fi ou dados móveis para ter sempre as informações atualizadas."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Como posso contribuir com preços no Mercadim?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Qualquer usuário pode registrar preços pelo app. Basta fotografar o produto ou digitar o valor. Cada contribuição ajuda toda a comunidade a economizar mais."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "O Mercadim tem lista de compras?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Sim! Você pode montar sua lista de compras dentro do app e o Mercadim mostra qual mercado da sua região tem o menor preço total para a sua lista."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Quanto posso economizar usando o Mercadim?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A economia varia por região e hábito de consumo, mas usuários relatam economias de 15% a 30% nas compras do mês ao comparar preços antes de ir ao mercado."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "O Mercadim está disponível para iPhone e Android?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Sim, o Mercadim está disponível para Android na Play Store e para iPhone na App Store, totalmente gratuito."
       }
     }
   ]
@@ -515,6 +561,21 @@ body{font-family:'Nunito',sans-serif;background:var(--branco);color:var(--preto)
 .store-btn-sub{font-size:10px;font-weight:600;color:rgba(255,255,255,0.45);display:block}
 .store-btn-name{font-size:18px;font-weight:900;display:block}
 
+/* ─── FAQ ─── */
+.faq-section{padding:96px 24px;background:#fff;}
+.faq-inner{max-width:800px;margin:0 auto;}
+.faq-inner .section-eyebrow{text-align:center;}
+.faq-inner .section-title{text-align:center;margin-bottom:48px;}
+.faq-list{display:flex;flex-direction:column;gap:0;}
+.faq-item{border-bottom:1px solid var(--borda);}
+.faq-item:first-child{border-top:1px solid var(--borda);}
+.faq-q{width:100%;display:flex;justify-content:space-between;align-items:center;padding:20px 0;background:none;border:none;cursor:pointer;font-family:'Nunito',sans-serif;font-size:1.05rem;font-weight:700;color:var(--preto);text-align:left;gap:16px;}
+.faq-icon{font-size:1.4rem;font-weight:400;color:var(--verde);flex-shrink:0;transition:transform .3s;}
+.faq-q[aria-expanded="true"] .faq-icon{transform:rotate(45deg);}
+.faq-a{max-height:0;overflow:hidden;transition:max-height .35s ease;}
+.faq-a p{padding:0 0 20px;color:var(--cinza);font-size:.97rem;line-height:1.7;}
+.faq-a.open{max-height:200px;}
+
 /* ─── FOOTER ─── */
 footer{
   background:var(--preto);padding:64px 0 40px
@@ -861,6 +922,56 @@ footer{
   </div>
 </section>
 
+<!-- ══ FAQ ══ -->
+<section class="faq-section" id="faq">
+  <div class="faq-inner">
+    <p class="section-eyebrow reveal">Tire suas dúvidas</p>
+    <h2 class="section-title reveal rd1">PERGUNTAS FREQUENTES</h2>
+    <div class="faq-list">
+      <div class="faq-item reveal">
+        <button class="faq-q" aria-expanded="false">O Mercadim é gratuito?<span class="faq-icon">+</span></button>
+        <div class="faq-a"><p>Sim, o Mercadim é 100% gratuito para sempre. Sem assinatura, sem plano premium, sem pegadinha. Baixe e economize de verdade.</p></div>
+      </div>
+      <div class="faq-item reveal rd1">
+        <button class="faq-q" aria-expanded="false">Como o Mercadim compara preços perto de mim?<span class="faq-icon">+</span></button>
+        <div class="faq-a"><p>O Mercadim usa geolocalização para identificar mercados, feiras e supermercados próximos de você e mostra os preços registrados pela comunidade em tempo real.</p></div>
+      </div>
+      <div class="faq-item reveal rd2">
+        <button class="faq-q" aria-expanded="false">O Mercadim funciona em qual cidade do Brasil?<span class="faq-icon">+</span></button>
+        <div class="faq-a"><p>O Mercadim funciona em todo o Brasil — de São Paulo, Rio de Janeiro e Belo Horizonte até cidades menores. Quanto mais usuários numa região, mais preços atualizados você encontra.</p></div>
+      </div>
+      <div class="faq-item reveal rd3">
+        <button class="faq-q" aria-expanded="false">Como a IA do Mercadim identifica produtos?<span class="faq-icon">+</span></button>
+        <div class="faq-a"><p>Basta fotografar qualquer produto na prateleira. A inteligência artificial do Mercadim reconhece o item automaticamente e compara o preço com outros estabelecimentos da sua região.</p></div>
+      </div>
+      <div class="faq-item reveal">
+        <button class="faq-q" aria-expanded="false">O Mercadim funciona em feiras livres?<span class="faq-icon">+</span></button>
+        <div class="faq-a"><p>Sim! O Mercadim foi feito pensando na realidade brasileira. Você pode comparar preços tanto em supermercados quanto em feiras livres e mercadinhos do bairro.</p></div>
+      </div>
+      <div class="faq-item reveal rd1">
+        <button class="faq-q" aria-expanded="false">Preciso de internet para usar o Mercadim?<span class="faq-icon">+</span></button>
+        <div class="faq-a"><p>Sim, o Mercadim precisa de internet para buscar os preços mais recentes da comunidade. Recomendamos usar com Wi-Fi ou dados móveis para ter sempre as informações atualizadas.</p></div>
+      </div>
+      <div class="faq-item reveal rd2">
+        <button class="faq-q" aria-expanded="false">Como posso contribuir com preços no Mercadim?<span class="faq-icon">+</span></button>
+        <div class="faq-a"><p>Qualquer usuário pode registrar preços pelo app. Basta fotografar o produto ou digitar o valor. Cada contribuição ajuda toda a comunidade a economizar mais.</p></div>
+      </div>
+      <div class="faq-item reveal rd3">
+        <button class="faq-q" aria-expanded="false">O Mercadim tem lista de compras?<span class="faq-icon">+</span></button>
+        <div class="faq-a"><p>Sim! Você pode montar sua lista de compras dentro do app e o Mercadim mostra qual mercado da sua região tem o menor preço total para a sua lista.</p></div>
+      </div>
+      <div class="faq-item reveal">
+        <button class="faq-q" aria-expanded="false">Quanto posso economizar usando o Mercadim?<span class="faq-icon">+</span></button>
+        <div class="faq-a"><p>A economia varia por região e hábito de consumo, mas usuários relatam economias de 15% a 30% nas compras do mês ao comparar preços antes de ir ao mercado.</p></div>
+      </div>
+      <div class="faq-item reveal rd1">
+        <button class="faq-q" aria-expanded="false">O Mercadim está disponível para iPhone e Android?<span class="faq-icon">+</span></button>
+        <div class="faq-a"><p>Sim, o Mercadim está disponível para Android na Play Store e para iPhone na App Store, totalmente gratuito.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
 <!-- ══ FOOTER ══ -->
 <footer>
   <div class="footer-top">
@@ -935,6 +1046,20 @@ const co = new IntersectionObserver(entries => {
   });
 }, { threshold: 0.5 });
 counters.forEach(c => co.observe(c));
+
+document.querySelectorAll('.faq-q').forEach(btn => {
+  btn.addEventListener('click', () => {
+    const expanded = btn.getAttribute('aria-expanded') === 'true';
+    document.querySelectorAll('.faq-q').forEach(b => {
+      b.setAttribute('aria-expanded', 'false');
+      b.nextElementSibling.classList.remove('open');
+    });
+    if (!expanded) {
+      btn.setAttribute('aria-expanded', 'true');
+      btn.nextElementSibling.classList.add('open');
+    }
+  });
+});
 </script>
 
 </body>
